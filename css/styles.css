@@ -2,7 +2,7 @@
 @import "main.css";
 
 .fa-row {
-  background-color: var(--dominantColor) !important;
+  background-color: #000000
   color: white;
   padding: 20px;
 }
