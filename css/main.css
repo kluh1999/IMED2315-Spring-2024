@@ -19,8 +19,8 @@ h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #000000
-  font-family: font-family: 'Onest', sans-serif;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 
@@ -33,7 +33,7 @@ text-decoration: none;
 }
 
 .navbar{
-  background-color: black !important; 
+  background-color: darkblue !important; 
 }
 
 .nav-link{
