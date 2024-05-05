@@ -102,6 +102,10 @@ text-decoration: none;
   width: 100%;
 }
 
+.menu-hover-lines li {
+  margin-right: 20px; /* Adjust spacing between words */
+}
+
 
 /*NAVBAR CODE ENDS*/
 
