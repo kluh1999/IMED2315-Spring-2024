@@ -32,6 +32,7 @@ top:0px;
 text-decoration: none;
 }
 
+/*NAVBAR CODE*/
 
 .menu-hover-lines {
   text-align: center;
@@ -39,10 +40,19 @@ text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.35s ease;
+  /* Change display to inline-block */
+  display: inline-block;
+  /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.menu-hover-lines li {
+  display: inline-block; /* Display list items horizontally */
 }
 
 .menu-hover-lines li a {
-  padding: 0.75rem 0;
+  padding: 0.75rem 1rem; /* Adjust padding as needed */
   color: rgba(10, 10, 10, 0.5);
   position: relative;
   margin-left: 1rem;
@@ -89,6 +99,8 @@ text-decoration: none;
   width: 100%;
 }
 
+
+/*NAVBAR CODE ENDS*/
 
 
 .footer-row{
