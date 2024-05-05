@@ -14,6 +14,10 @@
       crossorigin="anonymous"
     />
 
+    <!--Foundation CDN CSS-->
+    <link rel="stylesheet" href="path/to/foundation.min.css">
+
+
     <!--Google Fonts CDN CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,54 +101,30 @@
       <!--Google Icon Ends-->
 
       <!--Top NavBar Begins -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <!--<a class="navbar-brand" href="#">Navbar</a> -->
-          <button
-            class="navbar-toggler custom-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign up sheets</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Log-in
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Forms</a></li>
-                  <li><a class="dropdown-item" href="#">Inquiries</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">reviews</a>
-                  </li>
-                </ul>
+      <nav class="top-bar topbar-responsive">
+        <div class="top-bar-title">
+          <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle></button>
+          </span>
+          <a class="topbar-responsive-logo" href="#"><strong>Site Title</strong></a>
+        </div>
+        <div id="topbar-responsive" class="topbar-responsive-links">
+          <div class="top-bar-right">
+            <ul class="menu simple vertical medium-horizontal">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+                <button type="button" class="button hollow topbar-responsive-button">Categories</button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      
       <!-- Top NavBar Ends-->
     </header>
     <main>
@@ -648,6 +628,12 @@
 
       <!--Local JavaScript-->
       <script src="/js/scripts.js"></script>
+
+<!--Foundations JS-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script> <!-- Include Foundation JS -->
+    <script>
+        $(document).foundation();     
     </section>
     <!--End JS Section-->
   </body>
