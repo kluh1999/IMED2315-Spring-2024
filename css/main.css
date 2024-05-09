@@ -53,7 +53,7 @@ text-decoration: none;
 
 .menu-hover-lines li a {
   padding: 0.75rem 1rem; /* Adjust padding as needed */
-  color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+  color: white;
   position: relative;
   margin-left: 1rem;
   /* Add padding between words */
