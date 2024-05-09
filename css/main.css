@@ -190,8 +190,6 @@ text-decoration: none;
 
 .rounded-social-buttons .social-button:hover,
 .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
