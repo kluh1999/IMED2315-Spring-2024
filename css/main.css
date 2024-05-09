@@ -18,10 +18,10 @@ h2 {
   font-size: 55px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #000000
-  font-family: font-family: "Orbitron", sans-serif;
-  font-family: "Orbitron", sans-serif;
+  background-color: #000000;
+  font-family: "Orbitron", sans-serif; /* Combine font-family declaration */
 }
+
 
 
 .material-symbols-outlined, .material-symbols-outlined a {
@@ -118,7 +118,7 @@ text-decoration: none;
 /*Footer Code*/
 
 .footer-row{
-  background-color: #000000
+  background-color: #000000;
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -183,7 +183,7 @@ text-decoration: none;
   font-weight: normal;
   line-height: 2em;
   border-radius: 1.6875rem;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; /* Include transition property */
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
