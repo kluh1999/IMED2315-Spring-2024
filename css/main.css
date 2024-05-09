@@ -186,33 +186,24 @@ text-decoration: none;
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
-  background-size: contain;
+  overflow: hidden; /* Ensure the pseudo-element stays within the bounds of the button */
 }
 
-/* Adjust background image for each social button */
-.rounded-social-buttons .social-button.facebook {
-  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#facebook-f");
+.rounded-social-buttons .social-button::before {
+  content: ''; /* Add a pseudo-element */
+  position: absolute;
+  top: 50%; /* Position it in the middle of the button */
+  left: 50%;
+  width: 100%; /* Make it a square */
+  height: 100%;
+  background: currentColor;
+  transition: transform 0.5s ease; /* Apply transition effect */
 }
 
-.rounded-social-buttons .social-button.twitter {
-  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#twitter");
+.rounded-social-buttons .social-button:hover::before,
+.rounded-social-buttons .social-button:focus::before {
+  transform: rotate(360deg); /* Rotate the pseudo-element */
 }
 
-.rounded-social-buttons .social-button.youtube {
-  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#youtube");
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#instagram");
-}
-
-.rounded-social-buttons .social-button.github {
-  background-image: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.svg#github");
-}
-
-.rounded-social-buttons .social-button:hover,
-.rounded-social-buttons .social-button:focus {
-  transform: rotate(360deg);
-}
 
 /*Social Media Icons end*/
