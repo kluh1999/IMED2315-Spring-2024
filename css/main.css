@@ -78,6 +78,26 @@ text-decoration: none;
   background-color: transparent;
 }
 
+.menu-hover-lines a:before,
+.menu-hover-lines a::after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  transition: all 0.35s ease;
+  background-color: #1779ba;
+  width: 0;
+}
+
+.menu-hover-lines a::before {
+  top: 0;
+  left: 0;
+}
+
+.menu-hover-lines a::after {
+  bottom: 0;
+  right: 0;
+}
+
 .menu-hover-lines a:hover,
 .menu-hover-lines li.active > a {
   color: white;
@@ -89,11 +109,6 @@ text-decoration: none;
 .menu-hover-lines a:hover::after,
 .menu-hover-lines .active a::after {
   width: 100%;
-}
-
-.menu-hover-lines li:hover a:before,
-.menu-hover-lines li:hover a:after {
-  width: 0; /* Reset the width when not hovering */
 }
 
 
