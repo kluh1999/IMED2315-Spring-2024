@@ -40,8 +40,8 @@ text-decoration: none;
   font-weight: 500;
   letter-spacing: 1px;
   transition: all 0.35s ease;
-  /* Change display to inline-block */
-  display: inline-block;
+  /* Remove display property */
+  /* display: inline-block; */
   /* Remove default list styles */
   padding: 0;
   margin: 0;
@@ -51,20 +51,24 @@ text-decoration: none;
   margin-bottom: 20px; /* Adjust the value as needed */
 }
 
-
 .menu-hover-lines li {
   display: inline-block; /* Display list items horizontally */
+  margin-right: 70px; /* Adjust spacing between words */
+}
+
+.menu-hover-lines li:last-child {
+  margin-right: 0; /* Remove margin from the last menu item */
 }
 
 .menu-hover-lines li a {
   padding: 0.75rem 1rem; /* Adjust padding as needed */
   color: white;
   position: relative;
-  margin-left: 1rem;
+  /* Remove margin-left property */
+  /* margin-left: 1rem; */
   /* Add padding between words */
   letter-spacing: 5px; /* Adjust as needed */
 }
-
 
 .menu-hover-lines li:first-child a {
   margin-left: 0;
@@ -107,9 +111,6 @@ text-decoration: none;
   width: 100%;
 }
 
-.menu-hover-lines li {
-  margin-right: 70px; /* Adjust spacing between words */
-}
 
 
 /*NAVBAR CODE ENDS*/
